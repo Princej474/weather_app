@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,700&display=swap");
+* {
+  padding: 0;
+}
+
+body {
+  background-color: rgb(16, 65, 227) !important;
+  color: aliceblue;
+}
+
+.nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+a {
+  display: none;
+}
+
+.icons img {
+  width: 50px;
+}
+
+.top-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.top-section-data {
+  display: flex;
+  flex-direction: column;
+}
+
+#temperature {
+  font-size: 2rem;
+  margin: 0 !important;
+}
+
+#feels-like {
+  color: rgb(179, 199, 217);
+  padding-left: 5px;
+  margin: 0 !important;
+}
+
+.font {
+  font-family: "poppins", sans-serif;
+}
+
+input {
+  background: none;
+  outline: none;
+  border: none;
+  color: aliceblue;
+  font-size: 2rem;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  cursor: pointer;
+}
+
+.footer {
+  margin: auto;
+  width: 70%;
+  text-align: justify;
+  margin-top: 50px;
+  font-size: 1.8rem;
+}
+
+.suggestion {
+  position: absolute;
+  height: 20vh;
+  width: 90%;
+  background-color: aliceblue;
+  top: 4rem;
+  left: 7%;
+  opacity: 0.5;
+  overflow: scroll;
+  border-radius: 3%;
+}
+
+.suggestion ul {
+  color: black;
+  list-style: none;
+}
+
+.suggestion ul li {
+  cursor: pointer;
+  text-align: center;
+  padding: 3px;
+}
+
+.hide {
+  display: none;
+}
+
+@media (min-width: 321px) {
+  #location {
+    font-size: 3rem;
+  }
+
+  .fas {
+    width: 15rem;
+  }
+
+  #temperature {
+    font-size: 5rem;
+    margin: 0 !important;
+  }
+
+  .top-section {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: 480px) {
+  a {
+    display: block !important;
+  }
+}
+
+@media (min-width: 800px) {
+  .suggestion {
+    left: 35%;
+    width: 30%;
+  }
+}

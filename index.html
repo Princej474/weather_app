@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body class="font">
+    <div class="nav">
+      <a href="#" class="icons"
+        ><img src="./images/upload-icon.svg" alt="icon"
+      /></a>
+      <input placeholder="Enter a city name" type="text" id="location" />
+      <div class="suggestion hide">
+        <ul></ul>
+      </div>
+      <a href="#" class="icons"
+        ><img src="./images/notification.svg" alt="not-icon"
+      /></a>
+    </div>
+
+    <div class="top-section">
+      <img src="" class="fas" alt="weather-icon" />
+      <div class="top-section-data">
+        <h4 id="temperature"></h4>
+        <p id="feels-like"></p>
+      </div>
+    </div>
+    <p class="footer">
+      Make the most of this nice weather that I generated for you. Or else.
+    </p>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
